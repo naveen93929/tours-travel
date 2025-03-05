@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbran Tour&Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpeg" alt="Akbran Tour" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-user me-2"></i>Login
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide" style="background-image: url('images/banner1.jpeg')">
+                    <div class="hero-content">
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url('images/banner2.jpeg')">
+                    <div class="hero-content">
+                    </div>
+                </div>
+                <div class="swiper-slide hero-slide" style="background-image: url('images/banner3.jpeg')">
+                    <div class="hero-content">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section py-5">
+        <div class="container">
+            <div class="booking-form">
+                <h2 class="text-center mb-4">Book Your Dream Vacation</h2>
+                <form class="row g-3">
+                    <div class="col-md-3">
+                        <label class="form-label">Destination</label>
+                        <select class="form-select" required>
+                            <option value="">Choose...</option>
+                            <option>Kerala</option>
+                            <option>Goa</option>
+                            <option>Rajasthan</option>
+                            <option>Kashmir</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Check In</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Duration</label>
+                        <select class="form-select" required>
+                            <option value="">Days...</option>
+                            <option>3 Days</option>
+                            <option>5 Days</option>
+                            <option>7 Days</option>
+                            <option>10 Days</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Guests</label>
+                        <input type="number" class="form-control" min="1" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">&nbsp;</label>
+                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Tours Slider -->
+    <section class="featured-tours py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Tours</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/COORG.jpg" alt="Kerala">
+                            <div class="tour-content">
+                                <h3>Kerala</h3>
+                                <p>5 Days | Starting from ₹25,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/goa1.png" alt="Goa Beaches">
+                            <div class="tour-content">
+                                <h3>Goa Beach Tour</h3>
+                                <p>4 Days | Starting from ₹20,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/kodaikenal lake.jpeg" alt="kodaikenal">
+                            <div class="tour-content">
+                                <h3>kodaikenal</h3>
+                                <p>7 Days | Starting from ₹35,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/rishikesh1.jpeg" alt="Rishikesh">
+                            <div class="tour-content">
+                                <h3>Rishikesh</h3>
+                                <p>5 Days | Starting from ₹37,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/andaman.jpeg" alt="andaman">
+                            <div class="tour-content">
+                                <h3>Andaman</h3>
+                                <p>7 Days | Starting from ₹45,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/shimla iceage.jpg" alt="shimla">
+                            <div class="tour-content">
+                                <h3>Shimla</h3>
+                                <p>8 Days | Starting from ₹25,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/taj-mahal.jpg" alt="Agra">
+                            <div class="tour-content">
+                                <h3>Agra</h3>
+                                <p>3 Days | Starting from ₹32,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-card">
+                            <img src="images/Mumbai.png" alt="mumbai">
+                            <div class="tour-content">
+                                <h3>Mumbai</h3>
+                                <p>4 Days | Starting from ₹28,000</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Destinations -->
+    <section class="destinations py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Destinations</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/Coorg.webp" alt="Kerala">
+                        <div class="card-content">
+                            <h3>Coorg/Kerala</h3>
+                            <p>God's Own Country</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/goa1.png" alt="Goa">
+                        <div class="card-content">
+                            <h3>Goa</h3>
+                            <p>Beach Paradise & Nightlife</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/Pon-moundi-wayanad.jpg" alt="kerala">
+                        <div class="card-content">
+                            <h3>Wayanad/kerala</h3>
+                            <p>God's own place</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.7/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/rishikesh-3715497.webp" alt="rishikesh">
+                        <div class="card-content">
+                            <h3>Rishikesh</h3>
+                            <p>Yoga Capital</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/kodaikenal.jpg" alt="kodaikenal">
+                        <div class="card-content">
+                            <h3>kodaikenal</h3>
+                            <p>Heaven</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.6/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/taj-mahal.jpg" alt="Agra">
+                        <div class="card-content">
+                            <h3>Agra</h3>
+                            <p>City of Taj Mahal</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/ladakh.webp" alt="Ladakh">
+                        <div class="card-content">
+                            <h3>Ladakh</h3>
+                            <p>Land of High Passes</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/Gateway of India.avif" alt="Mumbai">
+                        <div class="card-content">
+                            <h3>Gateway of India</h3>
+                            <p>Ancient Ruins & Boulders</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/darjeeling.jpg" alt="Darjeeling">
+                        <div class="card-content">
+                            <h3>Darjeeling</h3>
+                            <p>Queen of Hills</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.7/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/andaman.jpeg" alt="Andaman">
+                        <div class="card-content">
+                            <h3>Andaman</h3>
+                            <p>Tropical Paradise</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/Kodaikanal_(1).jpg" alt="Caves">
+                        <div class="card-content">
+                            <h3>Guna Caves</h3>
+                            <p>Devil's Kitchen</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.6/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="destination-card">
+                        <img src="images/Ooty.webp" alt="Ooty">
+                        <div class="card-content">
+                            <h3>Ooty</h3>
+                            <p>Queen of Hill Stations</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.7/5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Blog Section -->
+    <section class="blog py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Travel Blog</h2>
+            <div class="swiper blogSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="images/varanasi.jpeg" alt="Varanasi">
+                            <div class="blog-content">
+                                <h3>The Spiritual Heart of India</h3>
+                                <p>A timeless city of spirituality, known for its sacred Ganga Aarti and ancient ghats.</p>
+                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="images/rishikesh.jpg" alt="Rishikesh">
+                            <div class="blog-content">
+                                <h3>The Yoga Capital of the World</h3>
+                                <p>The gateway to yoga and adventure in the serene Himalayan foothills.</p>
+                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="images/Hampi.jpg" alt="Hampi">
+                            <div class="blog-content">
+                                <h3>The Ruins of a Glorious Past</h3>
+                                <p>A mesmerizing UNESCO site of ancient ruins and captivating landscapes.</p>
+                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="images/rann of kutch.jpg" alt="Rann of Kutch">
+                            <div class="blog-content">
+                                <h3>A Surreal White Desert</h3>
+                                <p>A surreal white desert that comes alive during the vibrant Rann Utsav.</p>
+                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Customer Reviews</h2>
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Amazing Kerala tour experience! The backwaters were magical."</p>
+                            <div class="reviewer">
+                                <img src="images/reviewer1.jpeg" alt="Reviewer">
+                                <div>
+                                    <h5>Priya Sharma</h5>
+                                    <small>Delhi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"I was amazed by how easy it was to plan my trip using this website. The detailed guide on Wayanad made my vacation truly memorable. Great support and quick responses!"</p>
+                            <div class="reviewer">
+                                <img src="images/reviewer4.jpeg" alt="Reviewer">
+                                <div>
+                                    <h5>Rohan</h5>
+                                    <small>Pune</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div> 
+                            <p>"The blog reviews are fantastic! The recommendations for Andaman Islands were spot on, and the customer service team was so helpful in clarifying my questions."</p>
+                            <div class="reviewer">
+                                <img src="images/reviewer2.jpeg" alt="Reviewer">
+                                <div>
+                                    <h5>Meera</h5>
+                                    <small>Delhi</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The travel content on this site is top-notch! I planned my Ooty and Rishikesh trips effortlessly. The team’s support is reliable and quick—truly exceptional service!"</p>
+                            <div class="reviewer">
+                                <img src="images/reviewer5.jpeg" alt="Reviewer">
+                                <div>
+                                    <h5>Arjun</h5>
+                                    <small>Bangaluru</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"I can’t thank this team enough! Their suggestions for Hampi and Varanasi made my travel experience unforgettable. The support staff was friendly and attentive throughout."</p>
+                            <div class="reviewer">
+                                <img src="images/reviewer3.jpeg" alt="Reviewer">
+                                <div>
+                                    <h5>Anjali</h5>
+                                    <small>Jaipur</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+       <div class="container">
+          <h2 class="text-center mb-5">Why Choose Us</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="why-box">
+                      <i class="fas fa-globe"></i>
+                      <h3>Expert Guidance</h3>
+                      <p>Professional tour guides with extensive knowledge of destinations and local culture.</p>
+                    <div class="number">01</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="why-box">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Best Prices</h3>
+                    <p>Competitive prices and exclusive deals for unforgettable travel experiences.</p>
+                    <div class="number">02</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="why-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe Travel</h3>
+                    <p>Your safety is our priority with comprehensive travel insurance coverage.</p>
+                    <div class="number">03</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="why-box">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to assist you throughout your journey.</p>
+                    <div class="number">04</div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+
+  
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                        <div class="text-center mt-3">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">New user? Register here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book Your Trip</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Destination</label>
+                            <select class="form-select" required>
+                                <option value="">Select Destination</option>
+                                <option>Kerala Backwaters</option>
+                                <option>Goa Beaches</option>
+                                <option>Rajasthan Heritage</option>
+                                <option>Kashmir Valley</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Check-in Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Duration (Days)</label>
+                                <input type="number" class="form-control" min="1" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Number of Travelers</label>
+                            <input type="number" class="form-control" min="1" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Tour & Travel</h4>
+                    <p>Your trusted Indian travel partner</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>User Account</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Login/Register</a></li>
+                        <li><a href="#">My Bookings</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone me-2"></i>+91 1234567890</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@akbrantour.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>New Delhi, India</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var heroSwiper = new Swiper(".heroSwiper", {
+            effect: "fade",
+            speed: 1500,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        // Initialize all Swiper instances
+        var featuredSwiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        var blogSwiper = new Swiper(".blogSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+
+        var reviewSwiper = new Swiper(".reviewSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Initialize Bootstrap tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+
+        // Book Now button handler
+        document.querySelectorAll('.btn-book-now').forEach(button => {
+            button.addEventListener('click', function() {
+                var modal = new bootstrap.Modal(document.getElementById('bookingModal'));
+                modal.show();
+            });
+        });
+    </script>
+</body>
+</html>
